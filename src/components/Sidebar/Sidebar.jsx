@@ -1,0 +1,36 @@
+import React, {useState} from 'react'
+
+import {NavLink} from "react-router-dom";
+
+import styles from "../../styles/Sidebar.module.css"
+import {FolderTwoTone,SunOutlined } from '@ant-design/icons'
+import { Typography, Layout } from 'antd';
+const {Text} = Typography;
+
+const categories_list  = ['США','Индия', 'Германия', 'СНГ'];
+
+const Sidebar = ({value, onClickCategory}) => {
+    return (
+        <Layout className={styles.siderStyle}>
+                <Text className={styles.titleStyle}>Регион</Text>
+                <Text>
+                    <ul className={styles.decorationStyle}>
+                        {categories_list.map((name) => (
+                            <li
+                                class={styles.linkStyle}
+                                key={name}
+                                onClick={() => onClickCategory(name)}
+                                className={value === name ? 'active' : ''}>
+                                {/* <FolderTwoTone  className={styles.linkStyle}/> */}
+                                <SunOutlined />
+                                <NavLink to={`/`} className={styles.linkStyle}> {name}</NavLink>
+                                
+                            </li>
+                        ))}
+                    </ul>
+                </Text>
+        </Layout>
+    );
+};
+
+export default Sidebar

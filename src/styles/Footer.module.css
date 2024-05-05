@@ -1,0 +1,32 @@
+.fStyle {
+    color: '#fff';
+    background-color: '#4096ff';
+    border-radius: 15px;
+    /* height: 80px; */
+    /* margin: 80px; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: 'center';
+    justify-content: space-between;
+    /* padding: 24px; */
+    /* flex: 0 0 auto; */
+  };
+
+.tStyle {
+  padding: 100px;
+  margin: 10px;
+}
+
+.footerStyle {
+  position: sticky;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  background-color: rgba(248, 224, 204, 0.8);
+  border-radius: 5px;
+  color: rgba(103, 47, 1, 1);
+  text-align: center;
+  padding: 20px;
+}
+

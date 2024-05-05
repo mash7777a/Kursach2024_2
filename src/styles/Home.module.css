@@ -1,0 +1,26 @@
+.layoutStyle {
+    padding: 10px;
+    /* margin: 1%; */
+    background-color:rgba(248, 224, 204, 0.8);
+    border-radius: 2%;
+
+}
+
+.homeStyle {
+    position: absolute;
+    z-index: 2;
+    color: rgba(103, 47, 1, 0.978);
+    font-size: 6vw;
+    top: 4rem;
+    padding: 25px;
+    /* padding-top: 10px; */
+}
+
+.imgStyle {
+    /* background-color:rgba(248, 224, 204, 0.8); */
+    /* padding: auto; */
+    position: relative;
+    border-radius: 2%;
+    max-height: 85vh;
+    opacity: 0.6;
+}
