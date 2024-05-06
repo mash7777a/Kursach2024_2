@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import AppRoutes from '../Routes/Routes'
 import Head from "../Header/Header"
 import Footer from "../Footer/Footer"
@@ -10,12 +10,14 @@ import { Layout } from 'antd'
 const { Sider, Content } = Layout;
 
 const App = () => {
+  const [categoryId, setCategoryId] = useState(0);
+
   return (
     <Layout className={styles.layoutStyle}>
         <Head />
         <Layout className={styles.layoutStyle}>
             <Sider theme='light' className={styles.siderStyle}>
-                <Sidebar />
+                <Sidebar value={categoryId} onClickCategory={(name) => setCategoryId(name)}/>
             </Sider>
             <Content className={styles.contentStyle}>
                 <AppRoutes />

@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 import {NavLink} from "react-router-dom";
 
 import styles from "../../styles/Sidebar.module.css"
-import {FolderTwoTone,SunOutlined } from '@ant-design/icons'
+import {SunOutlined } from '@ant-design/icons'
 import { Typography, Layout } from 'antd';
 const {Text} = Typography;
 
@@ -23,7 +23,7 @@ const Sidebar = ({value, onClickCategory}) => {
                                 className={value === name ? 'active' : ''}>
                                 {/* <FolderTwoTone  className={styles.linkStyle}/> */}
                                 <SunOutlined />
-                                <NavLink to={`/`} className={styles.linkStyle}> {name}</NavLink>
+                                <NavLink to={`/region/${name}`} className={styles.linkStyle}> {name}</NavLink>
                                 
                             </li>
                         ))}

@@ -4,11 +4,16 @@
     /* background-color: beige; */
 
     /* align-items: 'center', */
+    font-family:fantasy;
+    font-optical-sizing: auto;
 }
 
 .layoutStyle {
     border-radius: 5% 5%;
     background-color: rgb(255, 250, 246);
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 
 }
 

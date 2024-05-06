@@ -36,7 +36,7 @@ const Head = () => {
                 <Link to={ROUTES.HOME} className={header_styles.linkStyle}>Главная страница</Link>
             </Text>
             <Text className={header_styles.pStyle}>
-                <Link to={ROUTES.HOME} className={header_styles.linkStyle}>Калькулятор зарплаты</Link>
+                <Link to={ROUTES.CALC} className={header_styles.linkStyle}>Калькулятор зарплаты</Link>
             </Text>
         </Text>
 

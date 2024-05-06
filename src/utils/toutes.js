@@ -1,3 +1,5 @@
 export const ROUTES = {
-    HOME: ''
+    HOME: '/',
+    REGION: "/region",
+    CALC: "/calc"
 }
