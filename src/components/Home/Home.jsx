@@ -15,7 +15,8 @@ const Home = () => {
         <Text className={styles.homeStyle}>Анализ рынка <br/> IT-специалистов</Text>
         <Image src={start_pic} className={styles.imgStyle} preview={false}/>
         
-        {/* <Text> Выберите желаемый регион</Text>
+        { <Text> Выберите желаемый регион</Text>
+        /*
         <Text>
                     <ul className={styles.decorationStyle}>
                         {categories_list.map((name) => (
